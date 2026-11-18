@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#210635">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Списки задач">
+<title>Списки задач</title>
+<link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAGyUlEQVR4nO3dvXEbSRBA4QbrSnnIFw0ZCoIByKFxhsJQAArjDBlyGICCoEFD9JkHHZ3BWtZyuQvMT89MT/f7bJHAAQ/Nxu4ecBIDPn748nf0fUC9p+f70+j7MOQOEHAMIwLvdoNEHFuvuJveCBFjT8u4m/xiQkaKFmFfaf9CYkaqFq2ovUIIGTW0prXKhCZm1NJqqOpVQchooWZaF09oYkYrNW0VBU3MaK20seygiRm9lLSWFTQxo7fc5pKDJmaMktNeUtDEjNFSG7wYNDHDipQW1U99AyOdDZrpDGsuNXkYNDHDqnNtsnLAld2gZ57Ojw938vhwN/puuGH18Txq9F3QM8eMWPZafXdVE0FjJtsr895MaGLGbLbN8qYQrhA0XHkNmnUDs1q3y4SGKwQNV65EWDcwv6Xh7hPa4lmnWVk9izfSSaTfhF4/+J8+f+1xkyEcRR3tMX56vj91DVrk5cGP9kD3kDKpvT/uT8/3pxP7sy+pK4jXuAnaoZy92lvYBO1Y7htGD3ETtHMlR0FmDpsTK86VxKl1OHDEIUWCDqB04tYEufxs76hZOQKpiat00vdeXwg6mNqJaX2/ZuUIpjZI66faCTogz1GzcgSmEaa1FYQJHZhGjNamNUGjmqWoCTo4rZXBStQEDVdREzRExE/UBA11I6MmaLzSPAQ3KmqCRjNcbYfhtE+U9I6aoPGOtbN/OQgazfWc0gSNXbOuHgSNbnpETdBwhaBxqMWbw9ZTmqDRXcuoCRpnzXYIj6AxRKspTdBwhaBxUau1o8WUJmi4QtAYSntKEzRcIWgkaXn4TnNKEzRcIWiYoDWlCRquEDRcIWgkm+G6DoKGGRp7NEHDFYKGKwQNVwgaptTu0QQNVwgarhA0XCFouELQMKfmjSFBwxWChisEDVcIGq4QNJKN/sq2FAQNVwgarhA0XCFouPLP6Dtgwe31TfK//fXnd8N7YtcMbwhFAgedE/Hez0UN27qQQe/FnBLo+ucI26ZQQZeGvP23pdMd7Z0+fvjyd/Sd6GEbYe1k1f59lo3Yn0s/AyTkUQ6N+DwHPLMQQa+nqWaI69/FGqKn5hOa3AfdKuYoZjlct3AfdGtMaVvCBM10zjfbdBZxHnSvicmLxY4Qx6FTg2PfHq/2I3tdT+gc7L9vzbhuiBD0rtzpnPtiuL2+4QXUiNugS4Nh1Zh3Oos4DroXb3v3yJg1vvKCoDdYBebmNuge07JkOlt+wcy8aizcBp0r54yfxps6D+uJJq1v2ApxHLpEarBewvQwnUWCTOicOEsu+Ne+H715iVkkwAX+tf+rlNaF/FaPhliIWfMLPcOsHLfXN0UhacdnKWaP3K8cFgJi1Tim/XXL7oNeGxEWq0ZfIYIedRE+k/k87eksEiTorR6hbSezlelsJeZWwgS9Dapl1Ezmy1pMZ5EAh+32tPpMDcuf1WEpZhGCVlf7KUqtflcLUWIWCRy0yPnV4FKQRz9rKWSRWDGLBA96TWPvJebLCHqA2S9MshiySPuYRQjancgxiwS6lqOG5aMXC6shi/SLWYSgzzpaPax92LnlmHtj5Tgwwx49Q8g9p7MIQe/KPeLRO+oZQhbpH7OI85XD+gmPXLOELDImZhGnEzplwh6FbfEDamYKWWRczCIOL05KDdLqBURrjw93xJzJ9cqRYglm9BOxmC3gNQuPoauVo2Tq/vrz+01EP/79r+i2S1eOmQNesxCzCBNaRF6ejCWs7z+/ZUedGrOXeLesxCxC0K/WUefyGmoKSzGLOFs5RHS+iP7x4S55Sn//+S359jyxFvLC3VEODZ8+f00KlZjtcTehReqOQ68tq8R2WkcNWcR2zCJOg15onSmMvCMvrIe8cB20tohhzxLygh06w2xPbq0Z/3uZ0IU8T+sZQ14QdCVPYc8c8oKgFc0Yt4eI15oH/fhw5+5Bu2SGsL0+JycRkVZRr59Yrw/gJZbi9v4cPD3fn5oGLRJzQp/TM/Boj3uXoJGmJvRo4R55er4/cbWdEd6j7PWX+krkpezmt4Swlr8+LdetpWHOFKK5ZTJ3m9BAa71WqtegWTswq3W7TGi4QtBw5U3QrB2YzbZZJjRceRc0Uxqz2Gt1d0ITNaw7apSVA64cBs2UhlXn2jw7oYka1lxqkpUDrlwMmikNK1JaTJrQRI3RUhtMXjmIGqPktJe1QxM1esttLvtNIVGjl5LWio5yEDVaK22s+LAdUaOVmrZUouRjEKBBY0iqnFhhWqOWVkPqITKtkUN7GKqf+mZaI1WLVprGx7TGnpZDr9s0Je7Yev3lHrIeEHcMI9ZPE/sugftg4f3T/+cW5mqIJfrDAAAAAElFTkSuQmCC">
+<style>
+:root{--light:#F5D5E0;--blue:#6667AB;--mid:#7B337E;--deep:#420D4B;--dark:#210635;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+body{margin:0;min-height:100vh;background:linear-gradient(165deg,#420D4B 0%,#210635 70%);color:var(--light);font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;}
+header{padding:18px 16px 0;}
+.brand{font-size:26px;font-weight:600;letter-spacing:.5px;color:var(--light);}
+.tabs{display:flex;gap:8px;margin-top:14px;}
+.tabs button{flex:1;padding:10px 4px;border:1px solid rgba(245,213,224,.25);border-radius:12px;background:rgba(33,6,53,.35);color:var(--light);font-size:15px;}
+.tabs button.on{background:var(--mid);border-color:var(--mid);font-weight:600;}
+main{padding:14px 14px 40px;}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;}
+.chip{white-space:nowrap;padding:8px 14px;border-radius:20px;border:1px solid rgba(102,103,171,.6);background:rgba(102,103,171,.15);color:var(--light);font-size:14px;}
+.chip.on{background:var(--blue);border-color:var(--blue);font-weight:600;}
+.chip.add{border-style:dashed;color:var(--blue);}
+.listhead{display:flex;align-items:center;justify-content:space-between;margin:14px 2px 6px;}
+.listhead h2{margin:0;font-size:20px;}
+.tools{display:flex;gap:6px;}
+.mini{border:none;background:rgba(245,213,224,.12);color:var(--light);border-radius:8px;padding:4px 9px;font-size:13px;}
+.task{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;background:rgba(33,6,53,.5);border:1px solid rgba(123,51,126,.45);border-radius:12px;margin-bottom:8px;}
+.box{flex:none;width:24px;height:24px;border-radius:50%;border:2px solid var(--blue);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--light);}
+.box.done{background:var(--mid);border-color:var(--mid);}
+.box.small{width:19px;height:19px;font-size:11px;margin-top:1px;}
+.txt{flex:1;word-break:break-word;line-height:1.35;}
+.txt.strike{text-decoration:line-through;opacity:.55;}
+.subs{margin:2px 0 8px 34px;}
+.subs .task{padding:8px 10px;border-color:rgba(123,51,126,.28);background:rgba(33,6,53,.3);}
+.empty{opacity:.6;text-align:center;padding:22px 0;}
+.addrow{display:flex;gap:8px;margin-top:12px;}
+.addrow input{flex:1;padding:11px 14px;border-radius:12px;border:1px solid rgba(102,103,171,.5);background:rgba(33,6,53,.55);color:var(--light);font-size:15px;}
+.addrow input::placeholder{color:rgba(245,213,224,.4);}
+.addrow button{width:46px;border:none;border-radius:12px;background:var(--mid);color:var(--light);font-size:20px;}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.quad{background:rgba(33,6,53,.5);border:1px solid rgba(123,51,126,.5);border-radius:14px;padding:10px;}
+.quad h3{margin:0 0 8px;font-size:13px;letter-spacing:.3px;color:var(--blue);text-transform:uppercase;}
+.quad ul{list-style:none;margin:0;padding:0;}
+.quad .task{padding:8px 9px;margin-bottom:6px;border-radius:10px;}
+.quad .addrow{margin-top:8px;}
+.quad .addrow input{padding:8px 10px;font-size:13px;}
+.quad .addrow button{width:34px;font-size:16px;}
+.hint{font-size:14px;line-height:1.5;opacity:.85;}
+.wpreview{white-space:pre-wrap;background:rgba(33,6,53,.6);border:1px solid rgba(123,51,126,.5);border-radius:14px;padding:14px;font-family:inherit;font-size:14px;line-height:1.5;max-height:46vh;overflow:auto;}
+.btnrow{display:flex;gap:10px;margin-top:14px;}
+.big{flex:1;padding:13px;border:none;border-radius:14px;background:var(--mid);color:var(--light);font-size:15px;font-weight:600;}
+.big.alt{background:rgba(102,103,171,.5);}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Списки задач</div>
+  <nav class="tabs">
+    <button data-act="tab" data-tab="lists" class="on">Списки</button>
+    <button data-act="tab" data-tab="matrix">Матрица</button>
+    <button data-act="tab" data-tab="widget">Виджет</button>
+  </nav>
+</header>
+<main id="app"></main>
+<script>
+'use strict';
+const KEY='moon_tasks_v4';
+function uid(){return Math.random().toString(36).slice(2,9);}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function load(){try{const d=JSON.parse(localStorage.getItem(KEY));if(d&&Array.isArray(d.lists)&&d.matrix)return d;}catch(e){}
+return {tab:'lists',active:0,lists:[{id:uid(),name:'Мои дела',tasks:[]}],matrix:{q1:[],q2:[],q3:[],q4:[]}};}
+let S=load();
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+const app=document.getElementById('app');
+document.addEventListener('click',onClick);
+document.addEventListener('submit',onSubmit);
+
+function findTask(id){return S.lists[S.active].tasks.find(t=>t.id===id);}
+
+function onClick(e){
+  const b=e.target.closest('[data-act]'); if(!b) return;
+  const act=b.dataset.act;
+  if(act==='tab'){S.tab=b.dataset.tab;}
+  else if(act==='addlist'){const n=prompt('Название списка','Новый список');if(n&&n.trim()){S.lists.push({id:uid(),name:n.trim(),tasks:[]});S.active=S.lists.length-1;}}
+  else if(act==='picklist'){S.active=+b.dataset.i;}
+  else if(act==='renamelist'){const L=S.lists[S.active];const n=prompt('Название списка',L.name);if(n&&n.trim())L.name=n.trim();}
+  else if(act==='dellist'){if(S.lists.length>1&&confirm('Удалить список «'+S.lists[S.active].name+'»?')){S.lists.splice(S.active,1);S.active=0;}}
+  else if(act==='toggle'){const t=findTask(b.dataset.t);if(t){t.done=!t.done;if(t.done)t.subs.forEach(s=>s.done=true);}}
+  else if(act==='toggletext'){const t=findTask(b.dataset.t);const n=prompt('Изменить задачу',t.text);if(n&&n.trim())t.text=n.trim();}
+  else if(act==='addsub'){const t=findTask(b.dataset.t);const n=prompt('Новый подпункт');if(n&&n.trim()&&t){t.subs.push({id:uid(),text:n.trim(),done:false});t.collapsed=false;}}
+  else if(act==='collapse'){const t=findTask(b.dataset.t);t.collapsed=!t.collapsed;}
+  else if(act==='deltask'){const L=S.lists[S.active];const i=L.tasks.findIndex(x=>x.id===b.dataset.t);if(i>-1)L.tasks.splice(i,1);}
+  else if(act==='subtoggle'){const t=findTask(b.dataset.t);const s=t.subs.find(x=>x.id===b.dataset.s);if(s)s.done=!s.done;}
+  else if(act==='subtext'){const t=findTask(b.dataset.t);const s=t.subs.find(x=>x.id===b.dataset.s);const n=prompt('Изменить подпункт',s.text);if(n&&n.trim())s.text=n.trim();}
+  else if(act==='subdel'){const t=findTask(b.dataset.t);t.subs=t.subs.filter(x=>x.id!==b.dataset.s);}
+  else if(act==='mtoggle'){const it=S.matrix[b.dataset.q].find(x=>x.id===b.dataset.t);if(it)it.done=!it.done;}
+  else if(act==='mtext'){const it=S.matrix[b.dataset.q].find(x=>x.id===b.dataset.t);const n=prompt('Изменить задачу',it.text);if(n&&n.trim())it.text=n.trim();}
+  else if(act==='mdel'){S.matrix[b.dataset.q]=S.matrix[b.dataset.q].filter(x=>x.id!==b.dataset.t);}
+  else if(act==='copy'){copyWidget();return;}
+  else if(act==='dl'){downloadWidget();return;}
+  save();render();
+}
+function onSubmit(e){
+  const f=e.target.closest('form[data-form]'); if(!f) return;
+  e.preventDefault();
+  const inp=f.querySelector('input'); const v=inp.value.trim(); if(!v) return;
+  if(f.dataset.form==='task'){S.lists[S.active].tasks.push({id:uid(),text:v,done:false,collapsed:false,subs:[]});}
+  else if(f.dataset.form==='m'){S.matrix[f.dataset.q].push({id:uid(),text:v,done:false});}
+  inp.value=''; save(); render(); const ni=document.getElementById('newtask'); if(ni) ni.focus();
+}
+
+function taskHtml(t){
+  let h='<div class="task">'
+    +'<span class="box'+(t.done?' done':'')+'" data-act="toggle" data-t="'+t.id+'">'+(t.done?'✓':'')+'</span>'
+    +'<span class="txt'+(t.done?' strike':'')+'" data-act="toggletext" data-t="'+t.id+'">'+esc(t.text)+'</span>'
+    +'<span class="tools">'
+    +'<button class="mini" data-act="addsub" data-t="'+t.id+'">＋</button>'
+    +(t.subs.length?'<button class="mini" data-act="collapse" data-t="'+t.id+'">'+(t.collapsed?'▸':'▾')+'</button>':'')
+    +'<button class="mini" data-act="deltask" data-t="'+t.id+'">✕</button>'
+    +'</span></div>';
+  if(t.subs.length&&!t.collapsed){
+    h+='<div class="subs">';
+    t.subs.forEach(s=>{
+      h+='<div class="task">'
+        +'<span class="box small'+(s.done?' done':'')+'" data-act="subtoggle" data-t="'+t.id+'" data-s="'+s.id+'">'+(s.done?'✓':'')+'</span>'
+        +'<span class="txt'+(s.done?' strike':'')+'" data-act="subtext" data-t="'+t.id+'" data-s="'+s.id+'">'+esc(s.text)+'</span>'
+        +'<span class="tools"><button class="mini" data-act="subdel" data-t="'+t.id+'" data-s="'+s.id+'">✕</button></span>'
+        +'</div>';
+    });
+    h+='</div>';
+  }
+  return h;
+}
+function renderLists(){
+  let h='<div class="chips">';
+  S.lists.forEach((L,i)=>{h+='<button class="chip'+(i===S.active?' on':'')+'" data-act="picklist" data-i="'+i+'">'+esc(L.name)+'</button>';});
+  h+='<button class="chip add" data-act="addlist">+ список</button></div>';
+  const L=S.lists[S.active];
+  h+='<div class="listhead"><h2>'+esc(L.name)+'</h2><span class="tools">'
+    +'<button class="mini" data-act="renamelist">✎</button>'
+    +(S.lists.length>1?'<button class="mini" data-act="dellist">✕</button>':'')
+    +'</span></div>';
+  L.tasks.forEach(t=>{h+=taskHtml(t);});
+  if(!L.tasks.length)h+='<div class="empty">Пока пусто — добавьте первую задачу ↓</div>';
+  h+='<form class="addrow" data-form="task"><input id="newtask" autocomplete="off" placeholder="Новая задача…"><button type="submit">＋</button></form>';
+  app.innerHTML=h;
+}
+const QN=[['q1','Срочно и важно'],['q2','Важно, не срочно'],['q3','Срочно, не важно'],['q4','Ни то ни то']];
+function renderMatrix(){
+  let h='<div class="mgrid">';
+  QN.forEach(q=>{
+    const k=q[0],label=q[1];
+    h+='<section class="quad"><h3>'+label+'</h3>';
+    S.matrix[k].forEach(t=>{
+      h+='<div class="task">'
+        +'<span class="box small'+(t.done?' done':'')+'" data-act="mtoggle" data-q="'+k+'" data-t="'+t.id+'">'+(t.done?'✓':'')+'</span>'
+        +'<span class="txt'+(t.done?' strike':'')+'" data-act="mtext" data-q="'+k+'" data-t="'+t.id+'">'+esc(t.text)+'</span>'
+        +'<span class="tools"><button class="mini" data-act="mdel" data-q="'+k+'" data-t="'+t.id+'">✕</button></span>'
+        +'</div>';
+    });
+    h+='<form class="addrow" data-form="m" data-q="'+k+'"><input autocomplete="off" placeholder="Добавить…"><button type="submit">＋</button></form></section>';
+  });
+  h+='</div>';
+  app.innerHTML=h;
+}
+function widgetText(){
+  let out='';
+  S.lists.forEach(L=>{
+    out+='◈ '+L.name+'\n';
+    L.tasks.forEach(t=>{
+      out+=(t.done?'☑':'☐')+' '+t.text+'\n';
+      if(!t.collapsed)t.subs.forEach(s=>{out+='   '+(s.done?'☑':'☐')+' '+s.text+'\n';});
+    });
+    out+='\n';
+  });
+  QN.forEach(q=>{
+    const k=q[0];
+    if(S.matrix[k].length){out+='▦ '+q[1]+'\n';S.matrix[k].forEach(t=>out+=(t.done?'☑':'☐')+' '+t.text+'\n');out+='\n';}
+  });
+  return out.trim();
+}
+function renderWidget(){
+  const txt=widgetText();
+  app.innerHTML='<p class="hint">Предпросмотр текста для виджета: вставьте его в KWGT (Android) или в заметку для виджета «Заметки» (iPhone). После изменений в приложении скопируйте текст заново.</p>'
+    +'<pre class="wpreview">'+(esc(txt)||'Пока пусто')+'</pre>'
+    +'<div class="btnrow"><button class="big" data-act="copy">Скопировать</button><button class="big alt" data-act="dl">Скачать .txt</button></div>';
+}
+function copyWidget(){
+  const txt=widgetText();
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(()=>alert('Скопировано')).catch(()=>fallbackCopy(txt));
+  } else fallbackCopy(txt);
+}
+function fallbackCopy(txt){
+  const ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();
+  try{document.execCommand('copy');alert('Скопировано');}catch(e){alert('Не удалось — выделите текст в предпросмотре вручную');}
+  ta.remove();
+}
+function downloadWidget(){
+  const b=new Blob([widgetText()],{type:'text/plain;charset=utf-8'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='spiski_zadach.txt';a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),500);
+}
+function render(){
+  document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.tab===S.tab));
+  if(S.tab==='lists')renderLists();else if(S.tab==='matrix')renderMatrix();else renderWidget();
+}
+render();
+</script>
+</body>
+</html>
